@@ -1,0 +1,12 @@
+from IPython.display import set_matplotlib_formats
+set_matplotlib_formats('pdf', 'svg')
+
+
+mount to drive
+
+
+
+%%capture
+!wget -nc https://raw.githubusercontent.com/brpy/colab-pdf/master/colab_pdf.py
+from colab_pdf import colab_pdf
+colab_pdf('pandas-assignment.ipynb') //pandas-assignment is the file name
